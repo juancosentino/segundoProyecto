@@ -15,14 +15,16 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-padre">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="./img/Homero Gordo.png" width="50px" alt=""></a>
+      <a class="navbar-brand" href="#"><img src="./img/Homero Gordo.png" width="50px" alt="">
           <h3 class="nombre-logo-footer-1 d-inline">El </h3>
           <h3 class="nombre-logo-footer-2 d-inline">Gordo</h3>
           <h3 class="nombre-logo-footer-3 d-inline">Peliculero</h3>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <div class="collapse navbar-collapse color-nav" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 categorias-nav">
           <li class="nav-item">
             <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
@@ -61,10 +63,6 @@
               <li><a class="dropdown-item" href="#">Episodios</a></li>
             </ul>
           </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2 buscador" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
           <li class="nav-item dropdown perfil">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Mi Perfil
@@ -75,6 +73,10 @@
               <li><a class="dropdown-item" href="#">Cerrar sesion</a></li>
             </ul>
           </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 buscador" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn boton-buscar" type="submit">Buscar</button>
         </form>
       </div>
     </div>
@@ -339,12 +341,12 @@
 </section>
 <!-- fin peliculas -->
 </main>
-  <section>
+  <section class="critica-padre">
     <h2 class="titulo-carousel">Últimas críticas</h2>
     <div class="container">
       <div class="row">
         <!-- critica 1 -->
-        <div class="col-3 ">
+        <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="card criticas" style="width: 16,5%;">
             <img src="./img/mario bros.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -354,7 +356,7 @@
           </div>
         </div>
         <!-- critica 2 -->
-        <div class="col-3">
+        <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="card criticas" style="width: 16,5%;">
             <img src="./img/flash.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -365,7 +367,7 @@
           </div>
         </div>
         <!-- critica 3 -->
-        <div class="col-3">
+        <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="card criticas" style="width: 16,5%;">
             <img src="./img/Terrifier.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -375,7 +377,7 @@
           </div>
         </div>
         <!-- critica 4 -->
-          <div class="col-3">
+          <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="card criticas" style="width: 16,5%;">
             <img src="./img/Fiesta de las salchichas.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -423,8 +425,7 @@
               </style>
               <path
                 d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
-            </svg></a>
-            <p class="Copyright">&copy; 2023 El Gordo Peliculero. Todos los derechos reservados.</p>
+            </svg></a>    
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-3 py-3">
@@ -435,9 +436,13 @@
           <a href="./html/404.html">Centro de Ayuda</a>
           <a href="./html/404.html"></a>
         </div>
+        
       </div>
     </div>
   </div>
+  <div>
+  <p class="Copyright text-center">&copy; 2023 El Gordo Peliculero. Todos los derechos reservados.</p>
+</div>
 </footer>
 <!-- Fin del Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 

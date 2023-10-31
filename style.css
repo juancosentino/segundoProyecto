@@ -23,6 +23,13 @@ body{
     padding-right: 40px;
 }
 
+.color-nav a:hover{
+    color: #007AFF;
+}
+
+.buscador::placeholder{
+    color: white;
+}
 .buscador{
     background-color: #151B32; 
 }
@@ -36,26 +43,30 @@ body{
     background-color: #151B32;
 }
 
-.nombre-logo{
-    text-align: center;
-}
-
 .Logo-Homero{
     width: 40px;
     height: 60px;
 }
 
 .nav-item{
-    display: flex;
-    justify-content: space-around;
     color: white;
 }
+
 .nav-item a{
     color: white;
 }
 
+
 .boton-buscar{
     background-color: #080F28;
+    font-family: 'carter one';
+    border: 1px #FE81A6 solid;
+    color: #FE81A6;
+}
+
+.boton-buscar:hover{
+    border: 1px #FE81A6 solid;
+    background-color: #FE81A6;
 }
 
 .texto-subtitulo{
@@ -241,6 +252,7 @@ justify-content: space-evenly;
 .nombre-logo-footer-1{
     color: white;
     font-family: 'carter one';
+    padding-left: 20px;
 }
 .nombre-logo-footer-2{
     color: #007AFF;
@@ -254,5 +266,55 @@ justify-content: space-evenly;
 .Copyright{
     padding-top: 20px;
     color: #EDB709;
+}
+
+@media (max-width:400px){
+    .critica-padre{
+        padding-left: 30px;
+    }
+    .div-nieto-pelicula h5{
+        font-size: medium;
+    }
+}
+
+@media (max-width:700px){
+    .critica-padre{
+        padding-left: 30px;
+    }
+    .div-nieto-pelicula h5{
+        font-size: medium;
+    }
+    .div-nieto-pelicula h1{
+        font-size: medium;
+        font-family: 'carter one';
+    }
+}
+
+@media (max-width:991px){
+    .categorias-nav{
+        padding: 0;
+        margin: 0;
+    }
+    .perfil{
+        padding: 0;
+        margin: 0;
+    }
+    .navbar-padre{
+        padding: 0;
+        margin: 0;
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+    }
+    .nav-item{
+        padding: 0;
+        margin: 0;
+    }
+    .nav-item a{
+        padding: 0;
+        margin: 0;
+    }
+    .buscador{
+        background-color: white; 
+    }
 }
 
