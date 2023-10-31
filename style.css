@@ -23,6 +23,10 @@ body{
     padding-right: 40px;
 }
 
+.boton-hamb{
+    color: white;
+    background-color: #FE81A6;
+}
 .color-nav a:hover{
     color: #007AFF;
 }
@@ -55,7 +59,6 @@ body{
 .nav-item a{
     color: white;
 }
-
 
 .boton-buscar{
     background-color: #080F28;
@@ -95,6 +98,10 @@ body{
 
 .div-hijo-pelicula{
     flex-basis: 50%;
+}
+
+.div-nieto-pelicula{
+    padding: 20px;
 }
 
 .carousel-card{
@@ -268,24 +275,44 @@ justify-content: space-evenly;
     color: #EDB709;
 }
 
-@media (max-width:400px){
+@media (max-width:350px){
     .critica-padre{
         padding-left: 30px;
     }
     .div-nieto-pelicula h5{
-        font-size: medium;
+        font-size: 10px;
     }
 }
 
-@media (max-width:700px){
+@media (max-width:550px){
+    .div-nieto-pelicula h5{
+        font-size: 12px;
+    }
+    .div-nieto-pelicula h1{
+        font-size: 20px;
+        font-family: 'carter one';
+    }
+}
+
+@media (max-width:700px) and (min-width:551px){
     .critica-padre{
         padding-left: 30px;
     }
     .div-nieto-pelicula h5{
-        font-size: medium;
+        font-size: 15px;
     }
     .div-nieto-pelicula h1{
-        font-size: medium;
+        font-size: 20px;
+        font-family: 'carter one';
+    }
+}
+
+@media (max-width:1100px) and (min-width:700px){
+    .div-nieto-pelicula h5{
+        font-size: 15px;
+    }
+    .div-nieto-pelicula h1{
+        font-size: 20px;
         font-family: 'carter one';
     }
 }
@@ -316,5 +343,6 @@ justify-content: space-evenly;
     .buscador{
         background-color: white; 
     }
+
 }
 
