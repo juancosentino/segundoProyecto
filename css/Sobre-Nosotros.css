@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif, 'carter one', 'Playpen Sans';
+    background-color: #080F28;
+}
+
+/* Imagen Principal */
+.div-padre-pelicula-principal{
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), #080F28), url(../img/Cine\ en\ Familia.jpg);
+    background-position: center center; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Playpen Sans';
+}
+
+.div-padre-pelicula-principal h1{
+    color: #EDB709;
+
+}
+
+
+.div-hijo-pelicula{
+    flex-basis: 50%;
+}
+
+.div-nieto-pelicula{
+    padding: 20px;
+}
