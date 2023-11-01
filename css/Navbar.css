@@ -1,0 +1,92 @@
+.navbar-padre{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: transparent;
+    font-family: 'carter One';
+}
+
+.categorias-nav{
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+.boton-hamb{
+    color: white;
+    background-color: #FE81A6;
+}
+.color-nav a:hover{
+    color: #007AFF;
+}
+
+.buscador::placeholder{
+    color: white;
+}
+.buscador{
+    background-color: #151B32; 
+}
+
+.perfil{
+    padding-left: 30px;
+    font-family: 'carter One';
+}
+
+.dropwdown-Nav{
+    background-color: #151B32;
+}
+
+.Logo-Homero{
+    width: 40px;
+    height: 60px;
+}
+
+.nav-item{
+    color: white;
+}
+
+.nav-item a{
+    color: white;
+}
+
+.boton-buscar{
+    background-color: #080F28;
+    font-family: 'carter one';
+    border: 1px #FE81A6 solid;
+    color: #FE81A6;
+}
+
+.boton-buscar:hover{
+    border: 1px #FE81A6 solid;
+    background-color: #FE81A6;
+}
+
+
+@media (max-width:991px){
+    .categorias-nav{
+        padding: 0;
+        margin: 0;
+    }
+    .perfil{
+        padding: 0;
+        margin: 0;
+    }
+    .navbar-padre{
+        padding: 0;
+        margin: 0;
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+    }
+    .nav-item{
+        padding: 0;
+        margin: 0;
+    }
+    .nav-item a{
+        padding: 0;
+        margin: 0;
+    }
+    .buscador{
+        background-color: white; 
+    }
+
+}

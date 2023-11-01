@@ -1,0 +1,30 @@
+/* Footer */
+.texto-footer {
+    text-decoration: underline;
+    color: #EDB709;
+  }
+  
+  .texto-footer a {
+    color: #EDB709;
+    text-decoration: none;
+    display: block;
+  }
+
+.nombre-logo-footer-1{
+    color: white;
+    font-family: 'carter one';
+    padding-left: 20px;
+}
+.nombre-logo-footer-2{
+    color: #007AFF;
+    font-family: 'carter one';
+}
+.nombre-logo-footer-3{
+    color: #FE81A6;
+    font-family: 'carter one';
+}
+
+.Copyright{
+    padding-top: 20px;
+    color: #EDB709;
+}
