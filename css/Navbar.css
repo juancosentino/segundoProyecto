@@ -22,6 +22,7 @@
 
 .buscador::placeholder{
     color: white;
+    opacity: 0.5;
 }
 .buscador{
     background-color: #151B32; 

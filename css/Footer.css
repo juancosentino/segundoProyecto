@@ -1,12 +1,23 @@
 /* Footer */
+.div-padre-footer{
+    background-color:#080F28;
+    border: 1px #EDB709 solid;
+    border-radius: 10px;
+}
+
 .texto-footer {
-    text-decoration: underline;
     color: #EDB709;
   }
   
+.texto-footer p{
+    padding-top: 20px;
+    font-family: 'carter one';
+}
+
   .texto-footer a {
+    padding-top: 10px;
     color: #EDB709;
-    text-decoration: none;
+    text-decoration: underline;
     display: block;
   }
 

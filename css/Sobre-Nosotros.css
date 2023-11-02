@@ -27,9 +27,7 @@ body{
 
 .div-padre-pelicula-principal h1{
     color: #EDB709;
-
 }
-
 
 .div-hijo-pelicula{
     flex-basis: 50%;
@@ -37,4 +35,138 @@ body{
 
 .div-nieto-pelicula{
     padding: 20px;
+}
+
+.div-nieto-pelicula h5{
+    padding-top: 20px;
+    opacity: 0.7;
+}
+
+/* Propietarios de la Web */
+img {
+    max-width: 100%;
+}
+
+.propietario{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 80px 0px;
+    background-color: #080F28;
+    border: none;
+}   
+
+.propietario h3{
+    font-family: 'carter one';
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.propietario h5{
+    font-family: 'Roboto';
+    font-size: 22px;
+    color: #007AFF;
+    margin-bottom: 8px;
+}
+
+.propietario p{
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 1.5;
+    color: #FE81A6;
+    margin-bottom: 20px;
+}
+
+.propietario img{
+    max-width: 100%;
+    height: auto;
+    height: 350px;
+    width: 350px;
+    border-radius: 10%;
+    border: 5px solid #EDB709;
+}
+
+.redes-sociales{
+    margin-bottom: 20px;
+}
+
+.redes-sociales a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #fff;
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+.redes-sociales a:hover{
+    transform: translateY(-3px);
+}
+
+.boton{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+.boton:hover{
+    transform: translateY(-3px);
+}
+
+@media (max-width:1270px){
+    .div-nieto-pelicula h1{
+        font-size: 40px
+    }
+    .div-nieto-pelicula h5{
+        font-size: 17px;
+    }
+}
+@media (max-width:991px){
+    .div-nieto-pelicula h1{
+        font-size: 40px
+    }
+    .div-nieto-pelicula h5{
+        font-size: 13px;
+    }
+}
+@media (max-width:753px){
+    .div-nieto-pelicula h1{
+        font-size: 25px
+    }
+    .div-nieto-pelicula h5{
+        font-size: 11px;
+    }
+}
+@media (max-width:556px){
+    .div-nieto-pelicula h1{
+        font-size: 20px;
+        padding-top: 30px;
+    }
+    .div-nieto-pelicula h5{
+        font-size: 11px;
+    }
+}
+@media (max-width:472px){
+    .div-nieto-pelicula h1{
+        font-size: 20px;
+        padding-top: 40px;
+    }
+    .div-nieto-pelicula h5{
+        font-size: 10px;
+    }
 }
