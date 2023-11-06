@@ -23,8 +23,7 @@ const sendForm = (ev) => {
     ev.preventDefault()
     const { user , pass, rpass , check } = objForm
     
-
-    if(user && pass & rpass){
+    if(user && pass && rpass){
         if(pass === rpass){
             const users =  JSON.parse(localStorage.getItem('users')) || []
             const userExist = users.filter((userLS) => userLS.user === user)
@@ -38,11 +37,17 @@ const sendForm = (ev) => {
                 user,
                 pass,
                 role: 'user',
-                login: false
+                login: true,
+                deleted: false
             }   
             users.push(newUser)
             
             localStorage.setItem('users',JSON.stringify(users))
+            localStorage.setItem('user', JSON.stringify(newUser))
+
+            setTimeout(() => {
+                location.href = '../html/Home.html'
+            }, 1000)
         }
         else{
             alert('las contraseñas no coinciden')

@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(https://i.pinimg.com/564x/3c/f6/56/3cf656908a2481110485bac3bf1297d9.jpg);
+    background-image: url(../img/Fondo\ Register.avif);
     background-size: cover;
     background-position: center;
 }

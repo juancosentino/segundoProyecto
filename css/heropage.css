@@ -147,6 +147,20 @@ body{
     transform: scale(1.1);
 }
 
+.nombre-logo-footer-1{
+    color: white;
+    font-family: 'carter one';
+    padding-left: 20px;
+}
+.nombre-logo-footer-2{
+    color: #007AFF;
+    font-family: 'carter one';
+}
+.nombre-logo-footer-3{
+    color: #FE81A6;
+    font-family: 'carter one';
+}
+
 @media (max-width: 845px ){
     .header .nav-links a{
         display: none;

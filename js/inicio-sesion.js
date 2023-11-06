@@ -1,4 +1,4 @@
-const inputMail = document.getElementById('idUser')
+    const inputMail = document.getElementById('idUser')
 const inputPass = document.getElementById('idPass')
 const buttonLog = document.getElementById('buttonLogin') 
 
@@ -20,21 +20,23 @@ const sendForm = (ev) => {
         console.log('click')
         const users =  JSON.parse(localStorage.getItem('users')) || []
         const userExist = users.filter((userLS) => userLS.user === user)
-        console.log(userExist)
+        console.log(userExist.length)
 
-        if(userExist.length > 0){
+        if(userExist.length < 0){
             return alert('usuario y/o contraseña incorrecta')
         }
         
-        if(userExist[0].pass === pass){
+        if(userExist[0].pass === pass && userExist[0].user === user){
             userExist[0].login = true
             localStorage.setItem('users', JSON.stringify(users))
+            localStorage.setItem('user', JSON.stringify(userExist[0]))
 
             if(userExist[0].rol === 'admin'){
                 location.href = '#'
             }else{
-                location.href = '#'
+                location.href = '../html/Home.html'
             }
+            
         }else{
             alert('usuario y/o contraseña incorrecta')
         }
