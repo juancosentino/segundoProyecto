@@ -5,6 +5,8 @@
     z-index: 100;
     background-color: transparent;
     font-family: 'carter One';
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
 .categorias-nav{
