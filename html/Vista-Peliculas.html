@@ -8,23 +8,22 @@
     content="Pagina Web de Servicio de Streaming, Peliculas Y Series, donde podras ver el catalogo mas actualizado de todos">
     <meta name="author" content="Cesar Hermida, Juan Consentino">
     <meta name="copyright" content="El Gordo Peliculero - Grupo N° 4 S.R.L.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto:wght@100;300;400;500;700;900&display=swap" 
         rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="../css/Vista-peliculas.css">
         <link rel="stylesheet" href="../css/Navbar.css">
         <link rel="stylesheet" href="../css/Footer.css">
-        <link rel="stylesheet" href="../css/Sobre-Nosotros.css">
         <!-- FavIcom -->
         <link rel="icon" type="image/x-icon" href="../img/Homero Gordo.png">
         <link rel="icon" type="image/png" sizes="32x32" href="../img/Homero Gordo.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../img/Homero Gordo.png">
-    <title>Sobre Nosotros</title>
+    <title>El Gordo Peliculero</title>
 </head>
 <body>
-      <!-- Navbar -->
+     <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-padre">
     <div class="container">
       <a class="navbar-brand" href="#"><img src="../img/Homero Gordo.png" width="50px" alt="">
@@ -39,7 +38,7 @@
       <div class="collapse navbar-collapse color-nav" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 categorias-nav">
           <li class="nav-item">
-            <a class="nav-link active text-light" aria-current="page" href="./Home.html">Inicio</a>
+            <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -63,6 +62,7 @@
              <li><a class="dropdown-item" href="#">Animacion</a></li>
               <li><a class="dropdown-item" href="#">Misterio</a></li>
               <li><a class="dropdown-item" href="#">Crimen</a></li>
+              <li><a class="dropdown-item" href="#">Drama</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -82,7 +82,7 @@
             <ul class="dropdown-menu dropwdown-Nav">
               <li><a class="dropdown-item" href="#">Cuenta</a></li>
               <li><a class="dropdown-item" href="#">Favoritos</a></li>
-              <li><a class="dropdown-item" href="#">Cerrar sesion</a></li>
+              <li><a class="dropdown-item" href="#" id="idLogout">Cerrar sesion</a></li>
             </ul>
           </li>
         </ul>
@@ -95,72 +95,45 @@
   </nav>
 <!-- Fin Nadvar -->
 <!-- Imagen Principal -->
-<section class="div-padre-pelicula-principal d-flex ">
-  <div class="div-hijo-pelicula">
-    <div class="div-nieto-pelicula">
-        <h1 class="text-decoration-underline">Sobre Nosotros</h1>
-        <h5>"En El Gordo Peliculero, somos apasionados amantes del cine y las series. Nuestra misión es proporcionarte información 
-          actualizada, reseñas imparciales y recomendaciones cuidadosamente seleccionadas para que disfrutes al máximo de tu tiempo de 
-          entretenimiento. Nuestro equipo de expertos en cine y televisión está dedicado a mantenerte al tanto de las últimas novedades 
-          en el mundo del entretenimiento, ayudándote a descubrir nuevas historias y a revivir tus clásicos favoritos. 
-          Bienvenido a nuestro rincón cinéfilo, donde la magia del séptimo arte cobra vida. ¡Únete a nosotros en este emocionante viaje 
-          cinematográfico!"</h5>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Fin Imagen  -->
-<!-- Propietarios de la web -->
-<!-- Propietario 1 -->
-<div class="card mb-3 propietario" style="max-width: 940px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="../img/Foto 2 proyecto.jpg" class="img-fluid" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h3 class="card-title">Cesar Hermida Cordaro</h3>
-          <h5>"Scrum Master"</h5>
-        <p class="card-text">En el tranquilo rincón de la ciudad, el murmullo del río se mezcla con el canto de los pájaros al amanecer. 
-          Un lugar donde los secretos se desvanecen en el viento y los sueños toman forma en cada suspiro.</p>
-          <div class="redes-sociales">
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+<section class="div-padre-pelicula-principal">
+    <div class="div-hijo-pelicula">
+      <div class="div-nieto-pelicula d-flex">
+        <div class="imagen-pelicula">
+        <img src="../img/Five Nights at Freddy's.avif" alt="">
         </div>
-        <a href="./404.html" class="boton">Contacto</a>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Propietario 2 -->
-<div class="card mb-3 propietario" style="max-width: 940px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="../img/Foto Juan.jpg" class="img-fluid" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h3 class="card-title">Juan Consentino</h3>
-            <h5>"Tech Lider"</h5>
-        <p class="card-text">En el tranquilo rincón de la ciudad, el murmullo del río se mezcla con el canto de los pájaros al amanecer. 
-          Un lugar donde los secretos se desvanecen en el viento y los sueños toman forma en cada suspiro.</p>
-          <div class="redes-sociales">
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <div class="texto-pelicula">
+          <h1>Five Nights at Freddy's</h1>
+          <p>1h 50min - 2023</p>
+            <span>Un guardia de seguridad con problemas comienza a trabajar en Freddy Fazbear's Pizza. 
+                Mientras pasa su primera noche en el trabajo, se da cuenta de que el turno de noche en Freddy's no será tan 
+                fácil de superar.</span>
+            <p> Genero:
+                <a href="">Terror</a>
+                <a href="">Misterio</a>
+            </p>
+            <span>Actores: Josh Hutcherson, Elizabeth Lail, Piper Rubio, Mary Stuart Masterson, Matthew Lillard, 
+                Lucas Grant, Kevin Foster, Jade Kindar-Martin, Jess Weiss, Kat Conner Sterling, Grant Feely, Jessica Blackmore, 
+                Bailey Winston, Michael Sullivan, Christian Stokes</span>
+            </div>
         </div>
-        <a href="./404.html" class="boton">Contacto</a>
       </div>
     </div>
-  </div>
-</div>
+  </section>
+<main>
+    <h2 class="titulo-pelicula">Tráiler:</h2>
+  <div class="div-video">
+        <div class="video">
+            <iframe  width="1185" height="631" src="https://www.youtube.com/embed/sld2-fE_Wng" title="FIVE NIGHTS AT FREDDY&#39;S: LA PELÍCULA | Tráiler Oficial 2 (Universal Studios) - HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</main>
+
 <!-- Footer -->
 <footer class="">
-  <div class="container-fluid">
-    <div class="row text-center justify-content-around align-items-center div-padre-footer">
+  <div class="container-fluid " style=" background-color:#080F28;">
+    <div class="row text-center justify-content-around align-items-center">
       <div class="col-sm-12 col-md-6 col-lg-3 py-3"> 
-        <a class="d-block" href="#"><img src="../img/Homero Gordo.png" width="70vw" height="100vw"></a>
+        <a class="d-block" href="#"><img src="../img/Homero Gordo.png" width="90vw" height="100vw"></a>
           <h2 class="nombre-logo-footer-1 d-inline">El </h2>
           <h2 class="nombre-logo-footer-2 d-inline">Gordo</h2>
           <h2 class="nombre-logo-footer-3 d-inline">Peliculero</h2>
@@ -197,9 +170,9 @@
       <div class="col-sm-12 col-md-6 col-lg-3 py-3">
         <div class="texto-footer">
           <p>Ayuda</p>
-          <a href="Sobre-Nosotros.html">Sobre Nosotros</a>
-          <a href="./404.html">Politicas de Privacidad</a>
-          <a href="./404.html">Centro de Ayuda</a>
+          <a href="/html/Sobre-Nosotros.html">Sobre Nosotros</a>
+          <a href="/html/404.html">Politicas de Privacidad</a>
+          <a href="/html/404.html">Centro de Ayuda</a>
         </div>
         
       </div>
@@ -210,6 +183,7 @@
 </div>
 </footer>
 <!-- Fin del Footer -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
     crossorigin="anonymous"></script>
