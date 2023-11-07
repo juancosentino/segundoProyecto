@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: 'Roboto', sans-serif, 'carter one';
+    background-color: #080F28;
+}
+
+/* Imagen Principal */
+.div-padre-pelicula-principal{
+    width: 100%;
+    height: 70vh;
+    background-image: url(../img/Banner\ Admin.jpg);
+    background-position: center center; 
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Playpen Sans';
+}
+
+.linea{
+    color: #8DA0BC;
+    border-top: 10px solid #8DA0BC;
+    border-radius: 30px;
+}
+
+.Titulo{
+    font-family: 'carter One';
+    color: #8DA0BC;
+    font-size: 20px;
+    text-decoration: underline;
+    padding-left: 20px;
+}
+
+/* Tabla */
+
+.tabla-Peliculas{
+    padding: 30px;
+}
+
+.video iframe{
+    width: 100px;
+    height: 100px;
+}
+
+.boton-agregar{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-bottom: 20px;
+}
+
+.boton-agregar h4{
+    padding-right: 10px;
+    font-family: 'carter One';
+    color: #8DA0BC;
+}
+
+.titulo-modal{
+    font-family: 'carter One';
+    color: black;
+}
+
+.titulo-modal::placeholder{
+    color: #EDB709;
+    font-family: 'carter One';
+}
