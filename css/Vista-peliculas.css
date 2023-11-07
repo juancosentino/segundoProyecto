@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: 'Roboto', sans-serif, 'carter one';
+    background-color: #080F28;
+}
+
+/* Imagen Principal */
+.div-padre-pelicula-principal{
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), #080F28), url(../img/Fnaf.avif);
+    background-position: center center; 
+    align-items: center;
+    justify-content: start;
+    padding: 20px 20px 20px 20px;
+    color: white;
+}
+
+.div-nieto-pelicula{
+    padding: 70px;
+    margin: 70px;
+}
+
+.div-nieto-pelicula h1{
+    font-family: 'carter one';
+}
+
+.div-nieto-pelicula p{
+    font-family: 'Roboto';
+    padding-top: 10px;
+    opacity: 0.5;
+}
+
+.div-nieto-pelicula span{
+    font-family: 'carter one';
+    opacity: 0.5;
+}
+
+.texto-pelicula{
+    width: 70%;
+}
+
+.texto-pelicula p a{
+    text-decoration: none;
+    color: #EDB709;
+    opacity: 1;
+}
+.imagen-pelicula{
+    width: 30%;
+}
+
+.imagen-pelicula img{
+    height: 320px;
+    width: 250px;
+}
+
+.div-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    height: 700px;
+    border: 2px #25335D solid;
+    background-color: #25335D;
+}
+
+.titulo-pelicula{
+    font-family: 'carter one';
+    color: #EDB709;
+    padding-left: 150px;
+    padding-bottom: 20px;
+    text-decoration: underline;
+}

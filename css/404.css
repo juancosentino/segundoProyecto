@@ -393,7 +393,7 @@ button {
 }
 
 .e-nav__link:after {
-  content: "Home Page";
+  content: "Regresar";
 }
 
 .e-nav__link:hover:before {
