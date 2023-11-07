@@ -34,7 +34,7 @@ contenedor.innerHTML = peliculas.map((peliculas) =>
                       <input type="text" class="form-control input-name" id="inputPeliculaName" aria-describedby="emailHelp" value="${peliculas.name}" name="name">
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label titulo-modal">Nombre</label>
+                      <label for="exampleInputEmail1" class="form-label titulo-modal">Genero</label>
                       <input type="text" class="form-control input-genero" id="inputPeliculaGenero" aria-describedby="emailHelp" value="${peliculas.Genero}" name="Genero">
                     </div>
                  <div class="mb-3">
