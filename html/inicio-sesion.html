@@ -19,30 +19,25 @@
 <body>
     <main>
         <div class="formulario">
-            <form action="">
+            <form id="loginForm">
                 <h1>Iniciar Sesion</h1>
                 <div class="input-box">
-                    <input type="mail" name="user" id="idUser" 
-                    placeholder="Mail">
+                    <input type="email" name="user" id="idUser" placeholder="Mail">
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" name="pass" id="idPass" 
-                    placeholder="Contraseña">
-                    <i class='bx bxs-lock-alt' ></i>
+                    <input type="password" name="pass" id="idPass" placeholder="Contraseña">
+                    <i class='bx bxs-lock-alt'></i>
                 </div>
 
                 <div class="remember-forgot">
-                    <label><input type="checkbox">Recuérdame</label> 
-                    <a href="#">¿Has olvidado tu contraseña?</a>
+                    <a href="./404.html">¿Has olvidado tu contraseña?</a>
                 </div>
 
                 <button type="submit" class="btn" id="buttonLogin">Iniciar Sesion</button>
 
                 <div class="register-link">
-                    <p>¿No tienes una cuenta? 
-                        <a href="../html/register.html">Registrarse</a>
-                    </p>
+                    <p>¿No tienes una cuenta? <a href="../html/register.html">Registrarse</a></p>
                 </div>
             </form>
         </div>

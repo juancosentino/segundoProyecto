@@ -1,6 +1,14 @@
 const peliculas = JSON.parse(localStorage.getItem('Peliculas')) || []
 const contenedor = document.getElementById('contenedor')
 
+const inputName_Serie_Pelicula=document.getElementById('')
+const inputTipo_Serie_Pelicula=document.getElementById('')
+const inputGenero_Serie_Pelicula=document.getElementById('')
+const inputImg_Serie_Pelicula=document.getElementById('')
+const inputDescripc_Serie_Pelicula=document.getElementById('')
+const inputActors_Serie_Pelicula=document.getElementById('')
+const inputVideo_Serie_Pelicula=document.getElementById('')
+
 contenedor.innerHTML = peliculas.map((peliculas) =>
     `
 <tr>
@@ -23,11 +31,11 @@ contenedor.innerHTML = peliculas.map((peliculas) =>
             <div class="modal fade" id="exampleModal-${peliculas.id}" tabindex="-1" aria-labelledby="exampleModalLabel-${peliculas.id}" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5 titulo-modal" id="exampleModalLabel-${peliculas.id}">editarPelicula:${peliculas.name}</h1>
+                <div class="modal-header logo-homero">
+                    <h1 class="modal-title fs-5 titulo-modal" id="exampleModalLabel-${peliculas.id}">Editar-Pelicula==>${peliculas.name}</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body modal-peliculas">
                   <form>
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label titulo-modal">Nombre</label>

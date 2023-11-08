@@ -71,3 +71,30 @@ body{
     color: #EDB709;
     font-family: 'carter One';
 }
+
+.logo-homero{
+    background-color: #141A32;
+    border-color: #EDB709;
+}
+
+.logo-homero h1{
+    color: white;
+}
+
+.logo-homero img{
+    margin-left: 20px;
+    width: 50%;
+    height: 30%;
+}
+
+.modal-peliculas{
+    background-color: #141A32;
+}
+
+.modal-peliculas label{
+    color: #EDB709;
+}
+
+.modal-peliculas button{
+    background-color: #EDB709;
+}
