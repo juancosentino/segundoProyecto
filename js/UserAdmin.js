@@ -1,13 +1,13 @@
 const peliculas = JSON.parse(localStorage.getItem('Peliculas')) || []
 const contenedor = document.getElementById('contenedor')
 
-const inputName_Serie_Pelicula=document.getElementById('')
-const inputTipo_Serie_Pelicula=document.getElementById('')
-const inputGenero_Serie_Pelicula=document.getElementById('')
-const inputImg_Serie_Pelicula=document.getElementById('')
-const inputDescripc_Serie_Pelicula=document.getElementById('')
-const inputActors_Serie_Pelicula=document.getElementById('')
-const inputVideo_Serie_Pelicula=document.getElementById('')
+const inputName_Serie_Pelicula=document.getElementById('inputName_Serie_Pelicula')
+const inputTipo_Serie_Pelicula=document.getElementById('inputTipo_Serie_Pelicula')
+const inputGenero_Serie_Pelicula=document.getElementById('inputGenero_Serie_Pelicula')
+const inputImg_Serie_Pelicula=document.getElementById('inputImg_Serie_Pelicula')
+const inputDescripc_Serie_Pelicula=document.getElementById('inputDescripc_Serie_Pelicula')
+const inputActors_Serie_Pelicula=document.getElementById('inputActors_Serie_Pelicula')
+const inputVideo_Serie_Pelicula=document.getElementById('inputVideo_Serie_Pelicula')
 
 contenedor.innerHTML = peliculas.map((peliculas) =>
     `
@@ -97,13 +97,13 @@ const dataForm = {
   }
 
   const formCreate = {
-    name_Serie_Pelicula: '',
-    Tipo_Serie_Pelicula: '',
-    Genero_Serie_Pelicula: '',
-    img_Serie_Pelicula: '',
-    descripc_Serie_Pelicula: '',
-    actors_Serie_Pelicula: '',
-    video_Serie_Pelicula: ""
+    names: '',
+    Tipos: '',
+    Generos: '',
+    imgs: '',
+    descripcs: '',
+    actorss: '',
+    videos: ""
   }
 
 const editarPelicula = (idPelicula) => {
@@ -142,14 +142,16 @@ const positionPelicula = peliculas.findIndex((peli) => peli.id === Number(idPeli
 
   const createPeliculaForm = (ev) => {
     const { name, value } = ev.target
+   
     formCreate[name] = value
   }
 
-  const sendFormCreate = (ev) => {
-    ev.preventDefault()
-    const { name_Serie_Pelicula, Tipo_Serie_Pelicula, Genero_Serie_Pelicula, img_Serie_Pelicula, descripc_Serie_Pelicula, actors_Serie_Pelicula, video_Serie_Pelicula} = formCreate
+  const sendFormCreate = () => {
+
+    const {names, Tipos, Generos, imgs, descripcs, actorss, videos} = formCreate
   
-    if (!name_Serie_Pelicula && !Tipo_Serie_Pelicula && !Genero_Serie_Pelicula && !img_Serie_Pelicula && !descripc_Serie_Pelicula && !actors_Serie_Pelicula && !video_Serie_Pelicula) {
+
+    if (!names && !Tipos && !Generos && !imgs && !descripcs && !actorss && !videos) {
       alert('el formulario esta vacio')
     } else {
   
@@ -157,13 +159,13 @@ const positionPelicula = peliculas.findIndex((peli) => peli.id === Number(idPeli
   
       const newPelicula = {
         id: newId,
-        title: name_Serie_Pelicula,
-        Tipe: Tipo_Serie_Pelicula,
-        category: Genero_Serie_Pelicula,
-        image: img_Serie_Pelicula,
-        description: descripc_Serie_Pelicula,
-        actors: actors_Serie_Pelicula,
-        video: video_Serie_Pelicula,
+        name: names,
+        Tipo: Tipos,
+        Genero:  Generos,
+        img:imgs,
+        descripc:descripcs,
+        actors:actorss,
+        video:videos,
   
       }
   
@@ -218,6 +220,7 @@ const positionPelicula = peliculas.findIndex((peli) => peli.id === Number(idPeli
     element.addEventListener('input', changeValues)
 });
 
+
 inputName_Serie_Pelicula.addEventListener('input', createPeliculaForm)
 inputTipo_Serie_Pelicula.addEventListener('input', createPeliculaForm)
 inputGenero_Serie_Pelicula.addEventListener('input', createPeliculaForm)
@@ -226,4 +229,3 @@ inputDescripc_Serie_Pelicula.addEventListener('input', createPeliculaForm)
 inputActors_Serie_Pelicula.addEventListener('input', createPeliculaForm)
 inputVideo_Serie_Pelicula.addEventListener('input', createPeliculaForm)
 
-buttonCreate.addEventListener('click', sendFormCreate)
